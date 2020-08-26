@@ -1,0 +1,30 @@
+<div class="panel">
+  <div class="panel-heading">{{ title }}</div>
+  <div class="panel-body">
+    <div class="container">
+      <h2>Confirm Details</h2>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>No.of Seats</th>
+            <th>Email</th>
+            <th>Flight Number</th>
+            <th>Fare</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{seats}}</td>
+            <td>{{email}}</td>
+            <td>{{flightNumber}}</td>
+            <td>{{pricePerSeat*seats}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-dark btn-block" (click)="display()">Passenger Details</button><br>
+      <router-outlet></router-outlet>
+      <button type="button" class="btn btn-dark btn-block" [routerLink]="['/payment']">Proceed to
+        Pay</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.label {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border-color: black;
+    outline: 0;
+    box-shadow: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btnStyle {
+    margin: auto 44%;
+}
+
+.panelHeadStyle {
+    font-size: 24px;
+    text-align: center;
+    margin: 15px;
+}
